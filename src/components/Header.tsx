@@ -20,17 +20,20 @@ const Header = () => {
 
           {/* Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#dashboard" className="text-foreground hover:text-primary transition-colors">
+            <a href="/" className="text-foreground hover:text-primary transition-colors">
+              Home
+            </a>
+            <a href="/upload" className="text-muted-foreground hover:text-primary transition-colors">
+              Upload DPR
+            </a>
+            <a href="/dashboard" className="text-muted-foreground hover:text-primary transition-colors">
               Dashboard
             </a>
-            <a href="#assessment" className="text-muted-foreground hover:text-primary transition-colors">
-              Assessment
-            </a>
-            <a href="#analytics" className="text-muted-foreground hover:text-primary transition-colors">
-              Analytics
-            </a>
-            <a href="#reports" className="text-muted-foreground hover:text-primary transition-colors">
+            <a href="/reports" className="text-muted-foreground hover:text-primary transition-colors">
               Reports
+            </a>
+            <a href="/contact" className="text-muted-foreground hover:text-primary transition-colors">
+              Contact
             </a>
           </nav>
 

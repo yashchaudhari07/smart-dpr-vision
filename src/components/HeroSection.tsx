@@ -23,14 +23,18 @@ const HeroSection = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button variant="hero" size="lg" className="px-8 py-3 text-lg">
-              Access Dashboard
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-            <Button variant="outline" className="px-8 py-3 text-lg">
-              View Analytics
-              <BarChart3 className="ml-2 h-5 w-5" />
-            </Button>
+            <a href="/upload">
+              <Button variant="hero" size="lg" className="px-8 py-3 text-lg">
+                Upload DPR
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </a>
+            <a href="/dashboard">
+              <Button variant="outline" size="lg" className="px-8 py-3 text-lg">
+                View Dashboard
+                <BarChart3 className="ml-2 h-5 w-5" />
+              </Button>
+            </a>
           </div>
           
           {/* Quick Stats */}

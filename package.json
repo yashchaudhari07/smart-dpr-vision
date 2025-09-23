@@ -79,4 +79,10 @@
     "typescript-eslint": "^8.38.0",
     "vite": "^5.4.19"
   }
+  "homepage": "https://yashchaudhari07.github.io/smart-dpr-vision",
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+}
+
 }

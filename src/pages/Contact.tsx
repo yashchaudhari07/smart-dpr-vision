@@ -154,10 +154,11 @@ const Contact = () => {
               <div>
                 <h3 className="font-semibold text-foreground mb-3">Quick Links</h3>
                 <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li><a href="/" className="hover:text-primary transition-colors">Home</a></li>
-                  <li><a href="/upload" className="hover:text-primary transition-colors">Upload DPR</a></li>
+                  <li><link href="/" className="hover:text-primary transition-colors">Home</link></li>
+                  <li><link href="/upload" className="hover:text-primary transition-colors">Upload DPR</link></li>
                   <li><a href="/dashboard" className="hover:text-primary transition-colors">Dashboard</a></li>
                   <li><a href="/reports" className="hover:text-primary transition-colors">Reports</a></li>
+                  
                 </ul>
               </div>
               

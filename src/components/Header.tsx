@@ -1,7 +1,7 @@
 import { Bell, Search, User, Shield, BarChart3 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-
+import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <header className="bg-card border-b border-border sticky top-0 z-50 shadow-card">
@@ -20,23 +20,22 @@ const Header = () => {
 
           {/* Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="/" className="text-foreground hover:text-primary transition-colors">
-              Home
-            </a>
-            <a href="/upload" className="text-muted-foreground hover:text-primary transition-colors">
-              Upload DPR
-            </a>
-            <a href="/dashboard" className="text-muted-foreground hover:text-primary transition-colors">
-              Dashboard
-            </a>
-            <a href="/reports" className="text-muted-foreground hover:text-primary transition-colors">
-              Reports
-            </a>
-            <a href="/contact" className="text-muted-foreground hover:text-primary transition-colors">
-              Contact
-            </a>
-          </nav>
-
+  <Link to="/" className="text-foreground hover:text-primary transition-colors">
+    Home
+  </Link>
+  <Link to="/upload" className="text-muted-foreground hover:text-primary transition-colors">
+    Upload DPR
+  </Link>
+  <Link to="/dashboard" className="text-muted-foreground hover:text-primary transition-colors">
+    Dashboard
+  </Link>
+  <Link to="/reports" className="text-muted-foreground hover:text-primary transition-colors">
+    Reports
+  </Link>
+  <Link to="/contact" className="text-muted-foreground hover:text-primary transition-colors">
+    Contact
+  </Link>
+</nav>
           {/* Search and Actions */}
           <div className="flex items-center space-x-4">
             <div className="relative hidden sm:block">
